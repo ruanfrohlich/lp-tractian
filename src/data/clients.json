@@ -1,0 +1,27 @@
+[
+  {
+    "image": "assets/img/clients/embraer.png",
+    "image2x": "assets/img/clients/embraer@2x.png",
+    "alt": "Logotipo Embraer"
+  },
+  {
+    "image": "assets/img/clients/yara.png",
+    "image2x": "assets/img/clients/yara@2x.png",
+    "alt": "Logotipo Yara"
+  },
+  {
+    "image": "assets/img/clients/danone.png",
+    "image2x": "assets/img/clients/danone@2x.png",
+    "alt": "Logotipo Danone"
+  },
+  {
+    "image": "assets/img/clients/hyundai.png",
+    "image2x": "assets/img/clients/hyundai@2x.png",
+    "alt": "Logotipo Hyundai"
+  },
+  {
+    "image": "assets/img/clients/bosch.png",
+    "image2x": "assets/img/clients/bosch@2x.png",
+    "alt": "Logotipo Bosch"
+  }
+]

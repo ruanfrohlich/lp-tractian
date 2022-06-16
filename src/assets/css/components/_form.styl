@@ -1,0 +1,126 @@
+@keyframes loading
+  0%
+    transform translate(-50%, -50%) rotate(0deg)
+
+  100%
+    transform translate(-50%, -50%) rotate(360deg)
+
+.form
+  position relative
+  display flex
+  flex-direction column
+  max-width 600px
+  margin 0 auto
+
+  &__actions
+    display flex
+    flex-direction column
+    align-items center
+
+    +above($md)
+      flex-direction row
+      column-gap 30px
+
+    .terms
+      display flex
+      flex-direction column
+      align-items center
+      row-gap 30px
+      width 100%
+
+      +above($lg)
+        flex-direction row
+        justify-content center
+        column-gap 46px
+
+    .terms-hook
+      border none
+      background transparent
+      padding 0
+      color $color-primary
+      font-size 18px
+      text-decoration underline
+
+    .field-label
+      font-weight $font-weight-normal !important
+
+  &__fields
+    display flex
+    flex-direction column
+    row-gap 16px
+
+    & + .form__actions
+      margin-top 16px
+
+      +above($md)
+        margin-top 22px
+
+  &&--sending
+    .btn
+      pointer-events none
+
+      &__icon
+        display inline-flex
+        visibility visible
+        animation loading 1s linear infinite
+
+      &__label
+        visibility hidden
+
+  &-feedback
+    position relative
+    width 100%
+    margin-bottom 20px
+
+    &__success
+    &__error
+      position absolute
+      display inline-block
+      top 0
+      left 0
+      width 100%
+      font-size 14px
+      line-height (14/38)
+      opacity 0
+      padding 8px
+      transition opacity 200ms ease-in-out
+      font-size 18px
+
+    &__success
+      color $color-success
+
+    &__error
+      color $color-danger
+
+  &&--error
+    .form-feedback__error
+      opacity 1
+
+  &&--success
+    .form-feedback__success
+      opacity 1
+
+.was-validated
+  .field-control:invalid
+    box-shadow inset 0 0 0 2px $color-danger !important
+
+    & ~ .field-label
+      color $color-danger !important
+
+    & ~ .invalid-feedback
+      visibility visible !important
+
+    & ~ button
+      color $color-danger !important
+      border-color $color-danger !important
+
+    & ~ svg
+      color $color-danger !important
+
+  .field-check__input:invalid
+    border-color $color-danger !important
+    color $color-danger !important
+
+    & ~ .field-check__label
+      color $color-danger !important
+

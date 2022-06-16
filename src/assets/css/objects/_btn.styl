@@ -1,0 +1,74 @@
+.btn
+  position relative
+  display inline-flex
+  align-items center
+  padding 6px 18px
+  border none
+  border-radius 10px
+  color var(--btn-color)
+  font-size 14px
+  font-weight $font-weight-semibold
+  line-height 1.5
+  background-color var(--btn-bg)
+  transition color $time-hover $ease-hover, background-color $time-hover $ease-hover
+
+  +above($lg)
+    font-size 20px
+    padding 12px 40px
+
+  .btn__icon
+    position absolute
+    top 50%
+    left 50%
+    transform translate3d(-50%, -50%, 0)
+    width 25px
+    height 25px
+    visibility hidden
+
+    svg
+      width 100%
+      height 100%
+      fill $white
+
+  &&--primary
+    --btn-bg $color-secondary
+    --btn-color $white
+
+    &:hover
+      --btn-bg lighten($color-secondary, 10%)
+
+  &&--submit
+    --btn-bg $color-gray-900
+    --btn-color $white
+
+    +above($lg)
+      padding 8px 30px
+
+    &:hover
+      --btn-bg $color-secondary
+
+  &&--wpp
+    --btn-bg #78a839
+    --btn-color $white
+    text-transform uppercase
+
+    +below($lg-max)
+      padding 6px 18px
+
+    &:hover
+      --btn-bg $color-primary
+
+    .icon
+      width 22px
+      height 22px
+      transform translateX(-10px)
+
+      +above($xl)
+        width 35px
+        height 35px
+        transform translateX(-25px)
+
+      svg
+        width 100%
+        height 100%
+        fill $white

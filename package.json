@@ -1,0 +1,46 @@
+{
+  "name": "lp-tractian",
+  "version": "1.0.0",
+  "description": "Projeto para resolução do desafio (criação de uma landing page em React/Next.js) proposto pela TRACTIAN.",
+  "author": "Ruan Frohlich <ruanfrohlich@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "webpack serve --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/plugin-proposal-class-properties": "^7.17.12",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-react-constant-elements": "^7.17.12",
+    "@babel/plugin-transform-react-inline-elements": "^7.16.7",
+    "@babel/plugin-transform-react-jsx": "^7.17.12",
+    "@babel/plugin-transform-runtime": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/runtime": "^7.18.3",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "dotenv-webpack": "^7.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-inlinesvg": "^3.0.0",
+    "rupture": "^0.7.1",
+    "style-loader": "^3.3.1",
+    "stylus": "^0.58.1",
+    "stylus-loader": "^7.0.0",
+    "terser-webpack-plugin": "^5.3.3",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "gsap": "^3.10.4"
+  }
+}

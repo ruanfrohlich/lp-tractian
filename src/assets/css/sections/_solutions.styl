@@ -1,0 +1,17 @@
+.solutions
+  position relative
+
+  .wrapper
+    padding-top 100px
+    padding-bottom 150px
+
+  .title
+    margin-bottom 40px
+
+  .solutions-grid
+    display grid
+    grid-template-columns repeat(2, minmax(0, 1fr))
+    grid-gap 40px
+
+    +between($md, $md-max)
+      padding 0 40px

@@ -1,0 +1,78 @@
+.main-hero
+  position relative
+  background linear-gradient(135deg, $color-primary 60%, #2563EB)
+  padding-top 82px
+  padding-bottom 150px
+  overflow hidden
+
+  .wrapper 
+    padding-top 60px
+    padding-bottom 20px
+
+  .hero-mask
+    position absolute
+    display inline-flex
+    align-items flex-end
+    bottom -2px
+    left 0
+    width 100%
+
+    svg   
+      width 100%
+      height 100%
+      fill $white
+
+  .title 
+    margin-bottom 20px
+    grid-area title
+
+  .editor 
+    margin-bottom 35px
+    grid-area editor
+
+  .about 
+    display flex
+    column-gap 10px
+    color $white    
+    grid-area about
+    margin-bottom 45px
+
+    &__link 
+      color currentColor
+      font-weight $font-weight-semibold
+
+      &:hover 
+        text-decoration underline
+  
+  .demo-image 
+    width 100%
+    height 100%
+    max-height 400px
+    grid-area image
+
+    img  
+      width 100%
+      height 100%
+      object-fit contain
+
+      +above($xl)
+        transform translateX(-62px)
+
+  .grid__col:first-child 
+    +between($md, $md-max)    
+      display grid
+      grid-template-columns 50% 50%
+      grid-template-areas "title image" "editor image" "about image"
+      
+  .grid__col:last-child 
+    display flex
+    justify-content center
+
+  .hero-figure
+    width 100%
+    max-width 450px
+    height 100%
+
+    svg 
+      width 100%
+      height 100%

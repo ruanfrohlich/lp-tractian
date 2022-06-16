@@ -1,0 +1,39 @@
+[
+  {
+    "icon": "assets/img/icons/vibration-sensor.svg",
+    "title": "Sensor de Vibração",
+    "description": "Análise de vibração e temperatura em tempo real com o Smart Trac.",
+    "link": ""
+  },
+  {
+    "icon": "assets/img/icons/energy-sensor.svg",
+    "title": "Sensor de Energia",
+    "description": "Detecte falhas elétricas e monitore o consumo de energia com o Energy Trac.",
+    "link": ""
+  },
+  {
+    "icon": "assets/img/icons/play.svg",
+    "title": "Entenda a Solução",
+    "description": "Descubra como a TRACTIAN facilita a rotina do profissional de manutenção.",
+    "link": "#",
+    "linkLabel": "Saiba mais"
+  },
+  {
+    "icon": "assets/img/icons/monitor.svg",
+    "title": "Software Gestão de Manutenção",
+    "description": "Gestão de Manutenção com a plataforma mais completa do mercado.",
+    "link": ""
+  },
+  {
+    "icon": "assets/img/icons/trusted.svg",
+    "title": "Funcionalidades do CMMS",
+    "description": "Centralize as atividades do seu time e potencialize seus resultados.",
+    "link": ""
+  },
+  {
+    "icon": "assets/img/icons/tutorial.svg",
+    "title": "Tutoriais",
+    "description": "Domine o TracOS e potencialize sua Gestão de Manutenção.",
+    "link": ""
+  }
+]

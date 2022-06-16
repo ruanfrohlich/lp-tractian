@@ -1,0 +1,32 @@
+.title
+  position relative
+  font-size clamp(18px, 3vw, 36px)
+  color var(--color)
+  font-weight $font-weight-bold
+
+  &&--primary 
+    --color $white
+
+  &&--secondary
+    --color $white
+    font-size clamp(14px, 3vw, 26px)
+    
+    &:before 
+      content ''
+      position absolute
+      top 50%
+      left 0
+      transform translate(calc(-100% - 10px), -50%)
+      width 100vw
+      height 2px
+      border-radius 20px
+      background-color currentColor
+
+    &-right
+      --color $color-primary
+      text-align right
+
+      &:before
+        left auto 
+        right 0
+        transform translate(calc(100% + 10px), -50%)
