@@ -22,10 +22,11 @@ const config = {
         warnings: false,
       },
     },
+    //https: true,
     magicHtml: true,
     historyApiFallback: true,
     compress: true,
-    port: 3001,
+    port: 3005,
     open: false,
     hot: true
   },
